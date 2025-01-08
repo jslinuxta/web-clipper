@@ -51,11 +51,12 @@ function createContextMenu() {
         contexts: ["page"]
     });
 
-    chrome.contextMenus.create({
-        id: "trilium-save-cropped-screenshot",
-        title: "Crop screen shot to Trilium",
-        contexts: ["page"]
-    });
+    // Removing the duplicate context menu item
+    // chrome.contextMenus.create({
+    //     id: "trilium-save-cropped-screenshot",
+    //     title: "Crop screen shot to Trilium",
+    //     contexts: ["page"]
+    // });
 
     chrome.contextMenus.create({
         id: "trilium-save-whole-screenshot",
